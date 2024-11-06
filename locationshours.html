@@ -3,62 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location & Hours</title>
+    <title>Location & Hours - Dev Dish Food Truck & Restaurant</title>
+
+     <!-- Link to CSS file -->
+     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div>
+    <!-- Header Section with Title -->
+    <header>
         <h1>Dev Dish Food Truck & Restaurant</h1>
-    </div>
+    </header>
 
-    <div>
-        <h2>
-            <a href="index.html">Home</a> / 
-            <a href="about.html">About Us</a> / 
-            <a href="menu.html">Menu</a> / 
-            <a href="locationshours.html">Location & Hours</a> /
-            <a href="devfavs.html">Dev Favorites</a>
-        </h2>
-    </div>
-
-    <div>
-        <h2>Location</h2>
-        <p>511 Tristin Isle Park, Hudsonton, Michigan</p>
-    </div>
-
-    <div>
-        <h2>Hours</h2>
+    <!-- Navigation Section -->
+    <nav>
         <ul>
-            <li>
-                <span>Monday:</span>
-                <span> 10am - 7pm</span>
-            </li>
-            <li>
-                <span>Tuesday:</span>
-                <span> 10am - 7pm</span>
-            </li>
-            <li>
-                <span>Wednesday:</span>
-                <span> 10am - 7pm</span>
-            </li>
-            <li>
-                <span>Thursday:</span>
-                <span> 10am - 10pm</span>
-            </li>
-            <li>
-                <span>Friday:</span>
-                <span> 10am - 9pm</span>
-            </li>
-            <li>
-                <span>Saturday:</span>
-                <span> 12pm - 11pm</span>
-            </li>
-            <li>
-                <span>Sunday:</span>
-                <span> 12pm - 11pm</span>
-            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="locationshours.html">Location & Hours</a></li>
+            <li><a href="devfavs.html">Dev Favorites</a></li>
         </ul>
-    </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+
+        <!-- Location Section -->
+        <section aria-labelledby="location-heading">
+            <h2 id="location-heading" class="menu-title">Location</h2>
+            <address>511 Tristin Isle Park, Hudsonton, Michigan</address>
+        </section>
+
+        <!-- Hours Section -->
+        <section aria-labelledby="hours-heading">
+            <h2 id="hours-heading" class="menu-title">Hours</h2>
+            <ul>
+                <li><strong>Monday:</strong> 10am - 7pm</li>
+                <li><strong>Tuesday:</strong> 10am - 7pm</li>
+                <li><strong>Wednesday:</strong> 10am - 7pm</li>
+                <li><strong>Thursday:</strong> 10am - 10pm</li>
+                <li><strong>Friday:</strong> 10am - 9pm</li>
+                <li><strong>Saturday:</strong> 12pm - 11pm</li>
+                <li><strong>Sunday:</strong> 12pm - 11pm</li>
+            </ul>
+        </section>
+
+    </main>
 
 </body>
 </html>

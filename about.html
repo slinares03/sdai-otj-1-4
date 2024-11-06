@@ -3,55 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>About Us - Dev Dish Food Truck & Restaurant</title>
+
+     <!-- Link to CSS file -->
+     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div>
+    <!-- Header Section with Title -->
+    <header>
         <h1>Dev Dish Food Truck & Restaurant</h1>
-    </div>
+    </header>
 
-    <div>
-        <h2>
-            <a href="index.html">Home</a> / 
-            <a href="about.html">About Us</a> / 
-            <a href="menu.html">Menu</a> / 
-            <a href="locationshours.html">Location & Hours</a> /
-            <a href="devfavs.html">Dev Favorites</a>
-        </h2>
-    </div>
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="locationshours.html">Location & Hours</a></li>
+            <li><a href="devfavs.html">Dev Favorites</a></li>
+        </ul>
+    </nav>
 
-    <div>
-        <h2>About Us</h2>
-        <p>
-            What's so great about combining the worlds of coding and cuisine? Dev Dish was founded by two passionate developers who turned their love for software into a culinary adventure. 
-            After years of coding by day and cooking by night, they decided to merge their two passions and create something extraordinary.
-        </p>
-    </div>
+    <!-- Main Content Section -->
+    <main>
+        <!-- About Section -->
+        <section aria-labelledby="about-heading">
+            <h2 id="about-heading" class="menu-title">About Us</h2>
+            <p>
+                What's so great about combining the worlds of coding and cuisine? Dev Dish was founded by two passionate developers who turned their love for software into a culinary adventure. 
+                After years of coding by day and cooking by night, they decided to merge their two passions and create something extraordinary.
+            </p>
+        </section>
 
-    <div>
-        <img src="./assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" 
-             alt="Outside Picture of Food Truck" height="200px" width="400px">
-    </div>
+        <!-- Image of Food Truck -->
+        <figure>
+            <img src="./assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" 
+                 alt="Outside Picture of Food Truck" height="200" width="400">
+            <figcaption>Our food truck bringing tech-inspired dishes to the streets.</figcaption>
+        </figure>
 
-    <div>
-        <p>
-            Dev Dish brings a unique twist to the food truck scene, offering a menu full of creative, tech-inspired dishes. 
-            Whether you're a tech enthusiast or a food lover, our offerings are designed to satisfy both your appetite and your curiosity.
-        </p>
-    </div>
+        <!-- Unique Offerings Section -->
+        <section aria-labelledby="offerings-heading">
+            <h2 id="offerings-heading" class="menu-title">Our Unique Offerings</h2>
+            <p>
+                Dev Dish brings a unique twist to the food truck scene, offering a menu full of creative, tech-inspired dishes. 
+                Whether you're a tech enthusiast or a food lover, our offerings are designed to satisfy both your appetite and your curiosity.
+            </p>
+        </section>
 
-    <div>
-        <img src="./assets/images/pexels-edwardeyer-1247755.jpg" 
-             alt="Serving 2 Hamburgers to Customer" height="300px" width="400px">
-    </div>
+        <!-- Image of Serving Hamburgers -->
+        <figure>
+            <img src="./assets/images/pexels-edwardeyer-1247755.jpg" 
+                 alt="Serving 2 Hamburgers to Customer" height="300" width="400">
+            <figcaption>Serving up delicious tech-themed dishes to our amazing customers.</figcaption>
+        </figure>
 
-    <div>
-        <p>
-            Dev Dish is the brainchild of Alex and Jamie, two friends who met at a hackathon and discovered a shared love for innovative cuisine. 
-            With a background in software development and a knack for culinary creativity, they embarked on a journey to deliver delicious, tech-themed dishes to the community.
-        </p>
-    </div>
+        <!-- Founders Section -->
+        <section aria-labelledby="founders-heading">
+            <h2 id="founders-heading" class="menu-title">Our Founders</h2>
+            <p>
+                Dev Dish is the brainchild of Alex and Jamie, two friends who met at a hackathon and discovered a shared love for innovative cuisine. 
+                With a background in software development and a knack for culinary creativity, they embarked on a journey to deliver delicious, tech-themed dishes to the community.
+            </p>
+        </section>
+    </main>
 
 </body>
 </html>

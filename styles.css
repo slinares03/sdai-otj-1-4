@@ -1,103 +1,155 @@
+/* Ensure no vertical centering */
+html, body {
+    height: 100%;
+}
+
 /* General Styles */
 body {
-    margin: 0;                   /* Remove default body margin */
-    padding: 0;                  /* Remove default padding */
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar Layout (Only for .sidebar-layout pages) */
+.sidebar-layout {
+    display: flex;
+}
+
+.sidebar-layout .sidebar {
+    width: 150px;
+    background-color: #f4f4f4;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-layout .sidebar .social-media {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sidebar-layout .sidebar .social-media a {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.sidebar-layout .sidebar .social-media img {
+    width: 50px;
+    height: auto;
+}
+
+/* Main Content Wrapper for Sidebar Layout */
+.sidebar-layout .content-wrapper {
+    flex: 1;
+    margin-left: 20px;
 }
 
 /* Header Section */
 header {
-    text-align: center;          /* Center the title text */
-    margin-top: 20px;             /* Add some top margin */
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* Navigation Section */
 nav {
-    text-align: center;          /* Center the navigation items */
-    margin: 20px 0;               /* Add space above and below the navigation */
+    text-align: center;
+    margin: 20px 0;
 }
 
 nav ul {
-    list-style: none;            /* Remove list bullets */
+    list-style: none;
     padding: 0;
 }
 
 nav ul li {
-    display: inline-block;       /* Display list items inline */
-    margin-right: 20px;          /* Add space between links */
+    display: inline-block;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;       /* Remove underline from links */
-    color: black;                /* Set text color */
+    text-decoration: none;
+    color: black;
 }
 
 /* Main Content Section */
 main {
-    width: 800px;                /* Set a width of 800px for the main content */
-    margin: 0 auto;              /* Center the content horizontally */
-    padding: 20px;               /* Add padding for better spacing */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Center Section Title */
 .menu-title {
-    width: 100%;                 /* Make the title take full width */
-    text-align: center;          /* Center the title text */
-    margin-bottom: 20px;         /* Add margin below the title */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Center Paragraph Text */
 p {
-    margin: 20px auto;           /* Add space around the text */
-    width: 80%;                  /* Limit width of paragraphs */
-    text-align: center;          /* Center the text inside the paragraph */
-}
-
-/* Ensure no vertical centering */
-html, body {
-    height: 100%;                /* Ensure the page fills the full height */
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
 }
 
 /* Center the Social Media Icons */
 .social-media {
-    text-align: center;  /* Center the images */
-    margin: 20px 0;       /* Add space above and below the social media icons */
+    text-align: center;
 }
 
 .social-media a {
-    margin-right: 20px;   /* Add space between the social media links */
-    display: inline-block; /* Ensure the icons are inline with proper spacing */
+    margin-right: 20px;
+    display: inline-block;
 }
 
 .social-media img {
-    width: 100px;         /* You can adjust the size of the icons */
-    height: auto;         /* Maintain aspect ratio */
+    width: 100px;
+    height: auto;
 }
 
-/* Apply font styles to all h1, h2, h3, and h4 */
+/* Heading Styles */
 h1, h2, h3, h4 {
-    font-family: 'Arial', sans-serif;   /* Set the font family */
-    font-size: 24px;                    /* Set the font size */
-    margin: 20px 0;                     /* Set margin to add spacing above and below */
-    color: #333333;                     /* Set the font color */
+    font-family: 'Arial', sans-serif;
+    color: #333333;
 }
 
-/* Optional: Customize individual headings if needed */
 h1 {
-    font-size: 32px; /* Larger font size for h1 */
-    color: #1a1a1a;  /* Darker color for h1 */
+    font-size: 32px;
+    color: #1a1a1a;
 }
 
 h2 {
-    font-size: 28px; /* Slightly smaller than h1 */
-    color: #444444;  /* Slightly lighter color for h2 */
+    font-size: 28px;
+    color: #444444;
 }
 
 h3 {
-    font-size: 24px; /* Default size */
-    color: #666666;  /* Lighter color for h3 */
+    font-size: 24px;
+    color: #666666;
 }
 
 h4 {
-    font-size: 20px; /* Smaller size for h4 */
-    color: #888888;  /* Light color for h4 */
+    font-size: 20px;
+    color: #888888;
+}
+
+/* Social Media Icons under Content */
+.social-media {
+    text-align: center;
+    margin-top: 20px; /* Adds space above the icons */
+}
+
+.social-media a {
+    margin-right: 15px; /* Spacing between icons */
+    display: inline-block;
+}
+
+.social-media img {
+    width: 50px; /* Set icon size */
+    height: auto;
+}
+
+/* Ensure there's some padding at the bottom of the content */
+main {
+    padding-bottom: 40px; /* Add padding to prevent icons from being too close to the footer */
 }

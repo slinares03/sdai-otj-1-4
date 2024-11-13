@@ -1,6 +1,12 @@
+
+
+
+
 /* Ensure no vertical centering */
 html, body {
     height: 100%;
+    background-color: #062760;
+
 }
 
 /* General Styles */
@@ -16,7 +22,7 @@ body {
 
 .sidebar-layout .sidebar {
     width: 150px;
-    background-color: #f4f4f4;
+    background-color: #f5d59c;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -68,7 +74,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: #f5d59c;
 }
 
 /* Main Content Section */
@@ -90,6 +96,16 @@ p {
     margin: 20px auto;
     width: 80%;
     text-align: center;
+    color: #f5d59c;
+}
+li {
+    color: #f5d59c;
+}
+address {
+    color: #f5d59c;
+}
+figcaption {
+    color: #f5d59c;
 }
 
 /* Center the Social Media Icons */
@@ -110,27 +126,27 @@ p {
 /* Heading Styles */
 h1, h2, h3, h4 {
     font-family: 'Arial', sans-serif;
-    color: #333333;
+    color: #f5d59c;
 }
 
 h1 {
     font-size: 32px;
-    color: #1a1a1a;
+    color: #f5d59c;
 }
 
 h2 {
     font-size: 28px;
-    color: #444444;
+    color: #f5d59c;
 }
 
 h3 {
     font-size: 24px;
-    color: #666666;
+    color: #f5d59c;
 }
 
 h4 {
     font-size: 20px;
-    color: #888888;
+    color: #f5d59c;
 }
 
 /* Social Media Icons under Content */

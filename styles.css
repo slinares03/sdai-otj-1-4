@@ -13,7 +13,22 @@ html, body {
 body {
     margin: 0;
     padding: 0;
+    
 }
+
+body div img {
+    width: auto;      /* Adjust width */
+    height: 300px;      /* Keep aspect ratio */
+    border: 2px solid #333;  /* Add a border */
+    position:center;
+    top:100px;
+    left:150px;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+
+
 
 /* Sidebar Layout (Only for .sidebar-layout pages) */
 .sidebar-layout {
@@ -136,7 +151,7 @@ h1 {
 
 h2 {
     font-size: 28px;
-    color: #f5d59c;
+   
 }
 
 h3 {
@@ -168,4 +183,12 @@ h4 {
 /* Ensure there's some padding at the bottom of the content */
 main {
     padding-bottom: 40px; /* Add padding to prevent icons from being too close to the footer */
+}
+
+
+.gallery-container {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
 }
